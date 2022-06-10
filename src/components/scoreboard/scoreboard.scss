@@ -1,0 +1,24 @@
+.scoreboard {
+    padding: 1em 0em;
+    grid-area: scoreboard;
+    display: flex;
+    justify-content: space-between;
+
+    &__tile {
+        padding: 1em 3em;
+        border-radius: var(--radius);
+        filter: drop-shadow(0px 4px 0px var(--shadow));
+    }
+
+    &__x-wins {
+        background-color: var(--teal);
+    }
+
+    &__o-wins {
+        background-color: var(--mustard);
+    }
+
+    &__ties {
+        background-color: var(--ash-blue);
+    }
+}

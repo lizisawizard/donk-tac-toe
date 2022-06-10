@@ -1,0 +1,46 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+
+  &__logo {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 5px;
+
+    &-x {
+      color: var(--teal);
+    }
+    &-o {
+      color: var(--mustard);
+    }
+  }
+
+  &__turn-indicator {
+    background-color: var(--ui1);
+    color: var(--teal);
+    font-size: 24px;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+
+    $border-color: #{var(--dark-green)};
+    filter: drop-shadow(0px 4px 0px var(--shadow));
+    // border-bottom: 2px solid darken($color: $border-color, $amount: 2);
+  }
+
+  &__reset {
+    background-color: var(--ash-blue);
+    padding: 8px;
+    display: flex;
+    border-radius: 8px;
+    
+    svg {
+      fill: var(--dark-green);
+      transform: rotate(322deg) scaleX(-1);
+    }
+  }
+}
+
+//TODO: add colors into a colors.scss 
