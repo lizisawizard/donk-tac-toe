@@ -2,17 +2,14 @@ import "./header.scss";
 import { Reset } from '@carbon/icons-react';
 import { Button } from "@carbon/react";
 
-const Header = () => {
+const Header = (props) => {
     return ( 
         <header className="header">
             <div className="header__logo">
                 <span  className="header__logo-x">X</span>
                 <span className="header__logo-o">O</span>
             </div> 
-            <div className="header__turn-indicator">X turn</div>
-            {/* <div className="header__reset">
-                <Reset/>
-            </div> */}
+            <div className="header__turn-indicator">{props.turn + " turn"}</div>
             <Button
                 className="header__reset"
                 renderIcon={Reset}

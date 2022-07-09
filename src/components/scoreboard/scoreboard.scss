@@ -5,9 +5,14 @@
     justify-content: space-between;
 
     &__tile {
-        padding: 1em 3em;
+        padding: .5em 3.5em;
         border-radius: var(--radius);
+        text-align: center;
         filter: drop-shadow(0px 4px 0px var(--shadow));
+
+        p {
+            font-size: 12px;
+        }
     }
 
     &__x-wins {

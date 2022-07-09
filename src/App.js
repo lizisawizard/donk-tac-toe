@@ -7,13 +7,15 @@ import './app.css';
 
 function App() {
 
-  // true is X false is O
-  const [turn, setTurn] = useState(true);
+  const [turn, setTurn] = useState("X");
   const [xScore, setXScore] = useState(0);
   const [oScore, setOScore] = useState(0);
   const [ties, setTies] = useState(0);
 
   const scoreKeeper = {
+    xScore,
+    oScore,
+    ties,
     setXScore,
     setOScore,
     setTies
@@ -26,6 +28,8 @@ function App() {
       />
       <Board 
         scoreKeeper={scoreKeeper}
+        turn={turn}
+        setTurn={setTurn}
       />
       <ScoreBoard
         scoreKeeper={scoreKeeper} 

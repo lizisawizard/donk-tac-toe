@@ -2,7 +2,7 @@
   width: 500px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 375px 80px;
+  grid-template-rows: 50px 375px 90px;
   grid-template-areas: 
     'header'
     'board'
